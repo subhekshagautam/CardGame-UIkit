@@ -43,7 +43,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1IL-gN-nJX" userLabel="Crads stack view">
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="170"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card3" translatesAutoresizingMaskIntoConstraints="NO" id="hXc-eW-hHK">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card12" translatesAutoresizingMaskIntoConstraints="NO" id="hXc-eW-hHK">
                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card10" translatesAutoresizingMaskIntoConstraints="NO" id="sva-V7-VUY">
@@ -55,6 +55,9 @@
                                         <rect key="frame" x="82" y="200" width="106" height="45"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="dealbutton"/>
+                                        <connections>
+                                            <action selector="dealTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4y4-Up-quL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <variation key="heightClass=compact-widthClass=compact" spacing="20"/>
@@ -113,6 +116,12 @@
                             <constraint firstItem="tv2-Fi-iEK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yXh-i6-mco"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="leftImageView" destination="hXc-eW-hHK" id="k0u-7j-Xfe"/>
+                        <outlet property="leftScoreBoard" destination="moN-qz-aFJ" id="co0-23-chL"/>
+                        <outlet property="rightImageView" destination="sva-V7-VUY" id="pM0-Zj-8QI"/>
+                        <outlet property="rightScoreBoard" destination="XP4-TT-Lh2" id="YcY-2q-ulf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,7 +131,7 @@
     <resources>
         <image name="Background" width="414" height="896"/>
         <image name="card10" width="120" height="170"/>
-        <image name="card3" width="120" height="170"/>
+        <image name="card12" width="120" height="170"/>
         <image name="dealbutton" width="82" height="31"/>
         <image name="logo" width="122" height="67"/>
         <systemColor name="systemBackgroundColor">
